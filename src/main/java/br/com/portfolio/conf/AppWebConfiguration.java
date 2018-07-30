@@ -6,9 +6,10 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import br.com.portfolio.controllers.HomeController;
+import br.com.portfolio.daos.ProjetoDAO;
 
 @EnableWebMvc
-@ComponentScan(basePackageClasses= {HomeController.class})
+@ComponentScan(basePackageClasses= {HomeController.class, ProjetoDAO.class})
 public class AppWebConfiguration {
 
 	@Bean
